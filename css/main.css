@@ -24,7 +24,7 @@ body {
 .lyrics {
   font-size: 28px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(3, 93, 117);
+  color: rgb(0, 201, 205);
   position: absolute;
   margin-bottom: 20%;
   z-index: 1;
@@ -1505,7 +1505,7 @@ body {
 }
  
  
-5
+
 
 @-webkit-keyframes leaf-ans-3 {
 
