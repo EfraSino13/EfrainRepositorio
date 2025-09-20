@@ -9,15 +9,19 @@ document.body.appendChild(audioMusic);
 onload = () => {
   document.body.classList.remove("container");
   var message = document.querySelector("#message");
-  message.innerHTML = "Da click en una flor Dani Bonita!";
+  message.innerHTML = "Contigo Dani, Cada día florece la ilusión de un mañana lleno de Esperanza, Amistad y Amor";
 
+
+
+ 
 };
 
 const myDiv = document.getElementById('flower');
 // Add a click event listener
 myDiv.addEventListener('click', function () {
-  message.style.opacity = 0;
-  message.innerHTML = "";            // You can perform any action here, e.g., change content, redirect, etc.
+              // You can perform any action here, e.g., change content, redirect, etc.
+ message2.style.opacity = 0;
+  message2.innerHTML = "";
   playAudio();
 });
 var lyrics = document.querySelector("#lyrics");
@@ -81,7 +85,13 @@ function updateLyrics() {
 // Llama a la función después de 216 segundos (216,000 milisegundos)
 setTimeout(playAudio, 500);
 setInterval(updateLyrics, 90);
-
+showMessage = () =>{
+ message.style.opacity = 0;
+  message.innerHTML = "";
+var message2 = document.querySelector("#message2");
+  message2.innerHTML = "Da click en una flor Dani Bonita!";
+}
+setTimeout(showMessage, 10000)
 // call this in the root or something
 function playAudio() {
   // check for user activation first to avoid the error
